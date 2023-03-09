@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -189,64 +189,50 @@
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container  px-lg-5">
-                <div class="row g-5 d-flex  justify-content-center">
-                    <div class="section-title position-relative text-center pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                        <h2 class="mt-2 text-light ">Get In Touch</h2>
-                    </div>
-                    <div class="col-md-3 col-lg-4">
-                        <i class="fa fa-phone-alt me-3"> <span class="text-light fs-5 px-2"> Contact: </span></i>
-                        <br>
-                        <div class="phonenum"><a href="tel:044-43512000">044-43512000</a> <br><a
-                                href="tel:9884862743">9840862743</a> </div>
-                        <i class="fa fa-envelope me-3"> <span class="text-light fs-5 px-2"> Mail: </span> </i>
+        <div class="container  px-lg-5">
+            <div class="row g-5 d-flex  justify-content-center">
+                <div class="section-title position-relative text-center pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 class="mt-2 text-light ">Get In Touch</h2>
+                </div>
+                <div class="col-md-3 col-lg-4">
+                    <i class="fa fa-phone-alt me-3"> <span class="text-light fs-5 px-2"> Contact: </span></i>
+                    <br>
+                    <div class="phonenum"><a href="tel:044-43512000">044-43512000</a> <br><a
+                            href="tel:9884862743">9840862743</a> </div>
+                    <i class="fa fa-envelope me-3"> <span class="text-light fs-5 px-2"> Mail: </span> </i>
 
-                        <p>For Sales: sales@vacsoftteck.com
-                            <br>
-                            For Support: support@vacsoftteck.com
-                        </p>
-                    </div>
-                    <div class="col-md-3 col-lg-4">
-                        <i class="fa fa-map-marker-alt me-3"><span class="text-light fs-5 px-2"> Location: </span></i>
+                    <p>For Sales: sales@vacsoftteck.com
                         <br>
-                        <p>
-                            No:K,2ndFloor ,
-                            Senthil Flats, No.59, Burkit Rd,
-                            T. Nagar, Chennai-600017
-                            Near RR Dental Hospital.</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-lg-3">
-                        <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="./about.html">About Us</a>
-                        <a class="btn btn-link" href="./contact.php">Contact Us</a>
-                        <a class="btn btn-link" href="./policy.html">Privacy Policy</a>
-                        <a class="btn btn-link" href="./Terms&Conditions.html">Terms & Condition</a>
-                        <a class="btn btn-link" href="./Refund-policy.html">Refund Policy</a>
-                        <a class="btn btn-link" href="./shipping-policy.html">Shipping Policy</a>
+                        For Support: support1@vacsoftteck.com
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-4">
+                    <i class="fa fa-map-marker-alt me-3"><span class="text-light fs-5 px-2"> Location: </span></i>
+                    <br>
+                    <p> No:K,2ndFloor ,
+                        Senthil Flats, <br> No.59, Burkit Rd,
+                        T. Nagar, <br>Chennai-600017 <br>
+                        Near RR Dental Hospital.</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="text-center ">
-                        &copy; <a class="border-bottom" href="#">VEXelectronics</a>, All Right Reserved.
-                        Designed By <a target="_blank" class="border-bottom"
-                            href="https://vacsoftteck.com">VACsoftteck</a>
-                    </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="./about.html">About Us</a>
+                    <a class="btn btn-link" href="./contact.php">Contact Us</a>
+                    <a class="btn btn-link" href="./policy.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="./Terms&Conditions.html">Terms & Condition</a>
+                    <a class="btn btn-link" href="./Refund-policy.html">Refund Policy</a>
+                    <a class="btn btn-link" href="./shipping-policy.html">Shipping Policy</a>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
         <!-- Footer End -->
 
 
