@@ -67,7 +67,7 @@
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div> -->
-                        <a href="contact.html" class="nav-item nav-link active">Contact Us</a>
+                        <a href="contact.php" class="nav-item nav-link active">Contact Us</a>
 
                     </div>
                     <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal"
@@ -135,33 +135,50 @@
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <input type="text" class="form-control" id="name" name="lastname" placeholder="Your Name" required>
                                             <label for="name">Your Name</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <input type="email" class="form-control" id="email"  name="email" placeholder="Your Email" required>
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
+                                            <input type="text" class="form-control" id="subject"  name="company" placeholder="organization" required>
+                                            <label for="subject">organization</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Number" required >
+                                            <label for="subject">Your Number</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <textarea class="form-control"  name="description" rows="5"  placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
                                             <label for="message">Message</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                        <button class="btn btn-primary w-100 py-3" value="Sumbit" type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </form>
+                            <?php
+		if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+
+            $lastname = $_GET['lastname'];
+			$email = $_GET['email'];
+			$company = $_GET['company'];
+			$phone = $_GET['phone'];
+			$description = $_GET['description'];
+            file_get_contents("https://vex.vaccrm.com/VAC/api/vacweblead.php?lastname=$lastname&email=$email&company=$comapny&phone=$phone&description=$description");
+                 }
+	?>
                         </div>
                     </div>
                 </div>
@@ -209,7 +226,7 @@
                     <div class="col-md-3 col-lg-3">
                         <h5 class="text-white mb-4">Popular Link</h5>
                         <a class="btn btn-link" href="./about.html">About Us</a>
-                        <a class="btn btn-link" href="./contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="./contact.php">Contact Us</a>
                         <a class="btn btn-link" href="./policy.html">Privacy Policy</a>
                         <a class="btn btn-link" href="./Terms&Conditions.html">Terms & Condition</a>
                         <a class="btn btn-link" href="./Refund-policy.html">Refund Policy</a>
