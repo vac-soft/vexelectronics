@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SEO Master - SEO Agency Website Template</title>
+    <title>Contact Us</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -47,8 +47,8 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><i class="fa fa-search me-2"></i>SEO<span class="fs-5">Master</span></h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <!-- <h1 class="m-0"><i class="fa fa-search me-2"></i>SEO<span class="fs-5">Master</span></h1> -->
+                    <img src="img/logo_black.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -57,20 +57,27 @@
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
-                        <div class="nav-item dropdown">
+                        <a href="products.html" class="nav-item nav-link">Products</a>
+                        <!-- <a href="project.html" class="nav-item nav-link">/Project</a> -->
+                        <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
                                 <a href="team.html" class="dropdown-item">Our Team</a>
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        </div> -->
+                        <a href="contact.php" class="nav-item nav-link active">Contact Us</a>
+
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
+                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    <div class="payment-button">
+                        <form>
+                            <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                data-payment_button_id="pl_LHOoj3iWrDaQ3k" async> </script>
+                        </form>
+                    </div>
                 </div>
             </nav>
 
@@ -128,33 +135,50 @@
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <input type="text" class="form-control" id="name" name="lastname" placeholder="Your Name" required>
                                             <label for="name">Your Name</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <input type="email" class="form-control" id="email"  name="email" placeholder="Your Email" required>
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
+                                            <input type="text" class="form-control" id="subject"  name="company" placeholder="organization" required>
+                                            <label for="subject">organization</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Number" required >
+                                            <label for="subject">Your Number</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <textarea class="form-control"  name="description" rows="5"  placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
                                             <label for="message">Message</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                        <button class="btn btn-primary w-100 py-3" value="Sumbit" type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </form>
+                            <?php
+		if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+
+            $lastname = $_GET['lastname'];
+			$email = $_GET['email'];
+			$company = $_GET['company'];
+			$phone = $_GET['phone'];
+			$description = $_GET['description'];
+            file_get_contents("https://vex.vaccrm.com/VAC/api/vacweblead.php?lastname=$lastname&email=$email&company=$comapny&phone=$phone&description=$description");
+                 }
+	?>
                         </div>
                     </div>
                 </div>
@@ -166,11 +190,23 @@
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container  px-lg-5">
-                <div class="row g-5">
+                <div class="row g-5 d-flex  justify-content-center">
                     <div class="section-title position-relative text-center pb-2 wow fadeInUp" data-wow-delay="0.1s">
                         <h2 class="mt-2 text-light ">Get In Touch</h2>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-3 col-lg-4">
+                        <i class="fa fa-phone-alt me-3"> <span class="text-light fs-5 px-2"> Contact: </span></i>
+                        <br>
+                        <div class="phonenum"><a href="tel:044-43512000">044-43512000</a> <br><a
+                                href="tel:9884862743">9840862743</a> </div>
+                        <i class="fa fa-envelope me-3"> <span class="text-light fs-5 px-2"> Mail: </span> </i>
+
+                        <p>For Sales: sales@vacsoftteck.com
+                            <br>
+                            For Support: support@vacsoftteck.com
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-4">
                         <i class="fa fa-map-marker-alt me-3"><span class="text-light fs-5 px-2"> Location: </span></i>
                         <br>
                         <p>
@@ -186,27 +222,15 @@
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <i class="fa fa-phone-alt me-3"> <span class="text-light fs-5 px-2"> Contact: </span></i>
-                        <br>
-                        <div class="phonenum"><a href="tel:044-43512000">044-43512000</a> <br><a
-                                href="tel:9884862743">9840862743</a> </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
 
-                        <i class="fa fa-envelope me-3"> <span class="text-light fs-5 px-2"> Mail: </span> </i>
-
-                        <p>For Sales: sales@vacsoftteck.com
-                            <br>
-                            For Support: support@vacsoftteck.com
-                        </p>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-3 col-lg-3">
                         <h5 class="text-white mb-4">Popular Link</h5>
                         <a class="btn btn-link" href="./about.html">About Us</a>
-                        <a class="btn btn-link" href="./contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="./contact.php">Contact Us</a>
                         <a class="btn btn-link" href="./policy.html">Privacy Policy</a>
                         <a class="btn btn-link" href="./Terms&Conditions.html">Terms & Condition</a>
+                        <a class="btn btn-link" href="./Refund-policy.html">Refund Policy</a>
+                        <a class="btn btn-link" href="./shipping-policy.html">Shipping Policy</a>
                     </div>
                 </div>
             </div>
