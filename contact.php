@@ -21,14 +21,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- <link href="lib/animate/animate.min.css" rel="stylesheet"> -->
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+    <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/cssstyles.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -70,9 +67,7 @@
                         <a href="contact.php" class="nav-item nav-link active">Contact Us</a>
 
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <div class="payment-button">
+                       <div class="payment-button">
                         <form>
                             <script src="https://checkout.razorpay.com/v1/payment-button.js"
                                 data-payment_button_id="pl_LHOoj3iWrDaQ3k" async> </script>

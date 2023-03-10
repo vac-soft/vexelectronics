@@ -231,6 +231,9 @@ h6,
 .sticky-top.navbar-light .navbar-brand img {
     max-height: 45px;
 }
+.payment-button{
+    padding-left: 20px;
+}
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
@@ -257,6 +260,9 @@ h6,
 
     .navbar-light .navbar-brand img {
         max-height: 45px;
+    }
+    .payment-button{
+        padding-left: 10px;
     }
 }
 
@@ -299,6 +305,7 @@ h6,
     .sticky-top.navbar-light .navbar-brand h1 {
         color: var(--primary);
     }
+    
 }
 
 
