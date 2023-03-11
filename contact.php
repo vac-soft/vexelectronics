@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <title>Contact Us</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="contact us" name="description">
+    <meta content="vexelectronics, telecommunications companies, telecommunications Products" name="keywords">
+
 
     <!-- Favicon -->
     <link href="img/logo.png" rel="icon">
@@ -42,9 +43,8 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <!-- <h1 class="m-0"><i class="fa fa-search me-2"></i>SEO<span class="fs-5">Master</span></h1> -->
                     <img src="img/logo_black.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -55,19 +55,20 @@
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="products.html" class="nav-item nav-link">Products</a>
-                        <!-- <a href="project.html" class="nav-item nav-link">/Project</a> -->
-                        <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div> -->
                         <a href="contact.php" class="nav-item nav-link active">Contact Us</a>
+                        <div class="nav-item dropdown">
+                            <a href="" class="h5 nav-link dropdown-toggle text-light nav-item nav-link"> <span
+                                class="text-primary">Login</span> </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="login.html" class="dropdown-item">Employee Login</a>
+                                <a href="customer.html" class="dropdown-item">Customer login</a>
+                                <a href="partner.html" class="dropdown-item">Partner Login</a>
+                            </div>
+                        </div>
+                  
 
                     </div>
-                       <div class="payment-button">
+                    <div class="payment-button">
                         <form>
                             <script src="https://checkout.razorpay.com/v1/payment-button.js"
                                 data-payment_button_id="pl_LHOoj3iWrDaQ3k" async> </script>
@@ -79,43 +80,16 @@
             <div class="container-xxl py-5 bg-primary hero-header mb-5">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-center mt-5">
                             <h1 class="text-white animated zoomIn">Contact Us</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
-                                </ol>
-                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Navbar & Hero End -->
-
-
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Full Screen Search End -->
-
-
+      
         <!-- Contact Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
@@ -195,10 +169,9 @@
                     <div class="phonenum"><a href="tel:044-43512000">044-43512000</a> <br><a
                             href="tel:9884862743">9840862743</a> </div>
                     <i class="fa fa-envelope me-3"> <span class="text-light fs-5 px-2"> Mail: </span> </i>
-
-                    <p>For Sales: sales@vacsoftteck.com
+                    <p>For Sales: sales@vexelectronics.in
                         <br>
-                        For Support: support1@vacsoftteck.com
+                        For Support: support1@vexelectronics.in
                     </p>
                 </div>
                 <div class="col-md-3 col-lg-4">
