@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GSM / PRI Gateway</title>
+    <title>Gateways / server / Phones</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="V Ex Electronics Systems Pvt.Ltd vexelectronics, telecommunications companies, telecommunications Products" name="keywords">
+    <meta
+        content="V Ex Electronics Systems Pvt.Ltd vexelectronics, Telecommunications Companies, Telecommunications Products"
+        name="keywords">
     <meta content="V Ex Electronics Systems Pvt.Ltd vexelectronics, GSM PRI Gateway" name="description">
 
     <!-- Favicon -->
@@ -41,15 +43,44 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <!-- navbar content in js file -->
+                <a href="../index.html" class="navbar-brand p-0">
+                    <img src="../img/logo_black.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="../index.html" class="nav-item nav-link active">Home</a>
+                        <a href="../about.html" class="nav-item nav-link">About</a>
+                        <a href="../products.html" class="nav-item nav-link">Products</a>
+                        <a href="../contact.php" class="nav-item nav-link">Contact Us</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span
+                                    class="h5 text-primary">Login</span></a>
+                            <div class="dropdown-menu m-0">
+                                <a href="https://vex.vaccrm.com/" class="dropdown-item">Employee Login</a>
+                                <a href="https://portal.vexelectronics.com/" class="dropdown-item">Customer login</a>
+                                <a href="https://partner.vexelectronics.com/" class="dropdown-item">Partner Login</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-button">
+                        <form>
+                            <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                data-payment_button_id="pl_LHOoj3iWrDaQ3k" async> </script>
+                        </form>
+                    </div>
+                </div>
             </nav>
+
             <div class="container-xxl py-5 bg-primary hero-header mb-5">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center mb-5">
-                            <h1 class="text-white animated zoomIn">GSM / PRI Gateway</h1>
+                            <h1 class="text-white animated zoomIn">Gateways / Server / Phones</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,6 +98,10 @@
                         <div class="section-title position-relative mb-4 pb-2 wow fadeInLeft" data-wow-delay="0.1s">
                             <h2 class="mt-2">GSM Gateway</h2>
                         </div>
+                        <!-- <ul>
+                            <li>PRI – Primary Rate Interface.</li>
+                            <li>It connects PRI lines to Server and other IP Devices like PC.</li>
+                        </ul> -->
                         <p class="mb-3 text-dark fs-7">A GSM (Global System for Mobile Communications) gateway is a
                             device that allows for the connection of traditional telephone systems, such as PBX (Private
                             Branch Exchange) systems, to a GSM mobile network. This enables companies to take advantage
@@ -105,6 +140,31 @@
                     </div>
 
 
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5">
+
+                    <div class="col-lg-6 wow fadeInUp py-5 pb-0" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-2 wow fadeInLeft" data-wow-delay="0.1s">
+                            <h2 class="mt-2">FXO Gateway</h2>
+                        </div>
+                        <p class="mb-3 text-dark fs-7">Foreign Exchange Office. It connects analog trunk lines to
+                            Server. Available configurations are 2,4 and 8 ports</p>
+
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight  py-5" data-wow-delay="0.1s"
+                        style="border-radius: 20px;">
+                        <div class="section-title position-relative mb-4 pb-2 wow fadeInRight" data-wow-delay="0.1s">
+                            <h2 class="mt-2 text-dark">FXS Gateway</h2>
+                        </div>
+                        <p class="mb-0 text-dark fs-7 "> Foreign Exchange Subscriber. It connects all analog phones to
+                            Server. Available configurations are 2, 4, 8, 16 and 32 ports.
+                        <p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -276,7 +336,6 @@
 
     <!-- Template Javascript -->
     <script src="../js/main.js"></script>
-    <script src="../js/javascript.js"></script>
 </body>
 
 </html>
