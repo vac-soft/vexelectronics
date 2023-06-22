@@ -2957,7 +2957,7 @@ h6 {
 
 .content{
   padding: 60px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
 }
 
 /*=====================================================================
@@ -3249,7 +3249,7 @@ h6 {
 }
 
 .style-3 .unlim .price {
-  color: #f44336;
+  color: seagreen;
 }
 
 .style-3 .unlim .plan {
