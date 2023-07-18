@@ -55,6 +55,7 @@
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="products.html" class="nav-item nav-link">Products</a>
+                        <a href="casestudy.html" class="nav-item nav-link">Case Studies</a>
                         <a href="contact.php" class="nav-item nav-link active">Contact Us</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span
