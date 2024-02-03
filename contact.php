@@ -1,3 +1,4 @@
+<?php include "ref.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,7 +107,7 @@
                             <h2 class="mt-2">Contact For Any Query</h2>
                         </div>
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
-                            <form>
+                            <form action="https://vex.vaccrm.com/VAC/api/vexweblead.php" method="get">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -139,7 +140,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" value="Sumbit" type="submit">Send Message</button>
+                                        <input type="hidden" class="form-control" name="ref" id="ref" value="<?php echo $_SESSION['ref']; ?>">
+					<button class="btn btn-primary w-100 py-3" value="Sumbit" type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </form>
@@ -151,7 +153,8 @@
 			$company = $_GET['company'];
 			$phone = $_GET['phone'];
 			$description = $_GET['description'];
-            file_get_contents("https://vex.vaccrm.com/VAC/api/vacweblead.php?lastname=$lastname&email=$email&company=$comapny&phone=$phone&description=$description");
+			$ref=$_SESSION['ref'];
+#            file_get_contents("https://vex.vaccrm.com/VAC/api/vexweblead.php?lastname=$lastname&email=$email&company=$comapny&phone=$phone&description=$description&ref=$ref");
                  }
 	?>
                         </div>
@@ -226,6 +229,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+	        document.getElementById('ref').value = myGlobalVariable;
+    </script>
 </body>
 
 </html>
