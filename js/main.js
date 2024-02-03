@@ -1,3 +1,20 @@
+
+//Get ref GET variable and stor eto Global variable
+var getVariable = (new URLSearchParams(window.location.search)).get('ref');
+var myGlobalVariable;
+if (getVariable !== null && getVariable !== '') {
+    myGlobalVariable = getVariable;
+    localStorage.setItem('myGlobalVariable', myGlobalVariable);
+
+} else {
+    myGlobalVariable = localStorage.getItem('myGlobalVariable') || 'vexwebsite';
+}
+
+console.log('myGlobalVariable:', myGlobalVariable);
+
+
+
+
 (function ($) {
     "use strict";
 
