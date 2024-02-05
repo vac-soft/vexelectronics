@@ -107,7 +107,7 @@
                             <h2 class="mt-2">Contact For Any Query</h2>
                         </div>
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
-                            <form action="https://vex.vaccrm.com/VAC/api/vexweblead.php" method="get">
+                            <form id="demo-form" action="https://vex.vaccrm.com/VAC/api/vexweblead.php" method="post" onsubmit="return validateRecaptcha()">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -141,6 +141,7 @@
                                     </div>
                                     <div class="col-12">
                                         <input type="hidden" class="form-control" name="ref" id="ref" value="<?php echo $_SESSION['ref']; ?>">
+					<div class="g-recaptcha" data-sitekey="6LeD2mYpAAAAACJeLSXfQ0xlD1zqjoWBZJnZWsnw"></div>
 					<button class="btn btn-primary w-100 py-3" value="Sumbit" type="submit">Send Message</button>
                                     </div>
                                 </div>
@@ -229,6 +230,22 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+     <script src="https://www.google.com/recaptcha/api.js" async defer ></script>
+ <script>
+	function validateRecaptcha() {
+        // Check if the reCAPTCHA response has been filled out
+        var response = grecaptcha.getResponse();
+
+        if (response.length === 0) {
+            // If the response is empty, display an error message or prevent form submission
+            alert("Please complete the reCAPTCHA!");
+            return false;
+        }
+
+        // If the reCAPTCHA response is filled out, allow the form submission
+        return true;
+    }   
+ </script>
     <script>
 	        document.getElementById('ref').value = myGlobalVariable;
     </script>
